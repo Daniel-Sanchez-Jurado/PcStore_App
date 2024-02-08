@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/BackgroundToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/redDark"
+        app:layout_constraintBottom_toBottomOf="@id/glToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ButtonHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20sp"
+        android:backgroundTint="@color/redDark"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_add"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/nameCard"
+        app:layout_constraintEnd_toStartOf="@+id/nameCard"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameCard"
+        tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nameCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/black"
+        android:maxWidth="150dp"
+        android:paddingVertical="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/glImageBottom"
+        app:layout_constraintEnd_toStartOf="@id/ButtonCart"
+        app:layout_constraintStart_toEndOf="@id/ButtonHome"
+        app:layout_constraintTop_toTopOf="@id/glImageTop">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:scaleType="centerInside"
+            android:src="@drawable/name"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glImageBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageButton
+        android:id="@+id/ButtonCart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/redDark"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        app:layout_constraintBottom_toBottomOf="@+id/nameCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/nameCard"
+        app:layout_constraintTop_toTopOf="@+id/nameCard"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/amountInCartTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bahnschrift"
+        android:textColor="@color/redLight"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ButtonCart"
+        app:layout_constraintEnd_toEndOf="@id/ButtonCart"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@id/ButtonCart"
+        app:layout_constraintTop_toTopOf="@id/ButtonCart"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <EditText
+        android:id="@+id/searchET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/bahnschrift"
+        android:hint="@string/search"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonSearch"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glToolbar"
+        tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+    <Button
+        android:id="@+id/ButtonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/redDark"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:fontFamily="@font/bahnschrift"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="@id/searchET"
+        app:layout_constraintEnd_toEndOf="@id/ButtonCart"
+        app:layout_constraintStart_toEndOf="@id/searchET"
+        app:layout_constraintTop_toTopOf="@id/searchET" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchET">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/categories1Layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/categories2Layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/categorie1TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_categories"
+                    android:focusable="true"
+                    android:fontFamily="@font/bahnschrift"
+                    android:paddingStart="5dp"
+                    android:text="@string/ctg1"
+                    android:textColor="@color/blackDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@drawable/background_dark_red_gradient" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categorie1RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/categories2Layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/categorie3Layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categories1Layout">
+
+                <TextView
+                    android:id="@+id/categorie2TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_categories"
+                    android:focusable="true"
+                    android:fontFamily="@font/bahnschrift"
+                    android:paddingStart="5dp"
+                    android:text="@string/ctg2"
+                    android:textColor="@color/blackDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@drawable/background_dark_red_gradient" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categorie2RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/categorie3Layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/LayoutCategories4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categories2Layout">
+
+                <TextView
+                    android:id="@+id/categorie3TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_categories"
+                    android:focusable="true"
+                    android:fontFamily="@font/bahnschrift"
+                    android:paddingStart="5dp"
+                    android:text="@string/ctg3"
+                    android:textColor="@color/blackDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@drawable/background_dark_red_gradient" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categorie3RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutCategories4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categorie3Layout">
+
+                <TextView
+                    android:id="@+id/categorie4TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_categories"
+                    android:focusable="true"
+                    android:fontFamily="@font/bahnschrift"
+                    android:paddingStart="5dp"
+                    android:text="@string/ctg4"
+                    android:textColor="@color/blackDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@drawable/background_dark_red_gradient" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categorie4RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

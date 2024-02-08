@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PcStore</string>
+    <string name="ctg1">Mäuse</string>
+    <string name="ctg2">Computermonitore</string>
+    <string name="ctg3">Kopfhörer</string>
+    <string name="ctg4">Tastaturen</string>
+    <string name="welcome">Willkommen</string>
+    <string name="home">Start</string>
+    <string name="cart">Einkaufskorb</string>
+    <string name="login">Anmeldung</string>
+    <string name="username">Benutzer</string>
+    <string name="password">Passwort</string>
+    <string name="search">Suche</string>
+    <string name="notFound">Texte nicht gefunden</string>
+    <string name="add">In den Einkaufskorb legen</string>
+    <string name="empty">Einkaufskorb leeren</string>
+    <string name="deletedArticles">Gelöschte Artikel</string>
+    <string name="total">Gesamt</string>
+    <string name="finish">Bestellung beenden</string>
+    <string name="successful">Erfolgreiche Bestellung</string>
+    <string name="articleAdded">Artikel zum Einkaufskorb hinzugefügt</string>
+    <string name="goToCart">Zum Einkaufskorb gehen</string>
+    <string name="listDeleted">Die Liste wurde erfolgreich gelöscht</string>
+    <string name="callError">Etwas ist schief gelaufen</string>
+    <string name="emptyUser">Leeres Benutzerfeld</string>
+    <string name="emptyPassword">Leeres Passwortfeld</string>
+    <string name="wrongUser">Falscher Benutzer</string>
+    <string name="articleDeleted">Artikel gelöscht</string>
+    <string name="API">Keine API-Verbindung</string>
+
+    <string name="uploadNewArticle">Neuen Artikel hochladen</string>
+    <string name="urlUpload">Bild Url</string>
+    <string name="nameUpload">Preis</string>
+    <string name="priceUpload">Precio</string>
+    <string name="descriptionUpload">Beschreibung</string>
+    <string name="buttonUpload">Artikel hochladen</string>
+    <string name="createArticle">Artikel erstellen</string>
+    <string name="selectCategorie">Kategorie auswählen</string>
+    <string name="toastErrorUpload">Falsche Daten</string>
+    <string name="successfullyUploaded">Artikel erfolgreich hochgeladen</string>
+    <string name="successfullyDeleted">Artikel dauerhaft gelöscht</string>
+    <string name="deleteArticle">Artikel löschen</string>
+    <string name="infoOwner">Information des Eigentümers</string>
+    <string name="textAddButton">Um ein neues Produkt zum Produktkatalog hinzuzufügen, drücken Sie die Schaltfläche "+" oben links.</string>
+    <string name="textDeleteButton">Um ein Produkt endgültig zu löschen, drücken Sie auf dem Produktdetailbildschirm auf die Schaltfläche "Produkt löschen".</string>
+
+</resources>

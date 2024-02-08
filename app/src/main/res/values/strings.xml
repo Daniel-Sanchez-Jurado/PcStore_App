@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">PcStore</string>
+    <string name="ctg1">Ratones</string>
+    <string name="ctg2">Monitores</string>
+    <string name="ctg3">Auriculares</string>
+    <string name="ctg4">Teclados</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="home">Inicio</string>
+    <string name="cart">Carrito</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="search">Buscar</string>
+    <string name="notFound">Texto no encontrado</string>
+    <string name="add">Añadir a la cesta</string>
+    <string name="empty">Vaciar cesta</string>
+    <string name="deletedArticles">Artículos eliminados</string>
+    <string name="total">Total</string>
+    <string name="finish">Finalizar pedido</string>
+    <string name="successful">Pedido realizado con éxito</string>
+    <string name="articleAdded">Artículo añadido al carrito</string>
+    <string name="goToCart">Ir al carrito</string>
+    <string name="listDeleted">La lista se ha borrado correctamente</string>
+    <string name="callError">Algo ha ido mal</string>
+    <string name="emptyUser">Campo de usuario vacío</string>
+    <string name="emptyPassword">Campo de contraseña vacío</string>
+    <string name="wrongUser">Usuario incorrecto</string>
+    <string name="articleDeleted">Artículo eliminado</string>
+    <string name="API">No hay conexíon con la API</string>
+
+    <string name="uploadNewArticle">Subir artículo nuevo</string>
+    <string name="urlUpload">Url de la imágen</string>
+    <string name="nameUpload">Nombre</string>
+    <string name="priceUpload">Precio</string>
+    <string name="descriptionUpload">Descripción</string>
+    <string name="buttonUpload">Subir artículo</string>
+    <string name="createArticle">Crear artículo</string>
+    <string name="selectCategorie">Selecciona categoría</string>
+    <string name="toastErrorUpload">Dato erroneo</string>
+    <string name="successfullyUploaded">Artículo subido correctamente</string>
+    <string name="successfullyDeleted">Artículo eliminado permanentemente</string>
+    <string name="deleteArticle">Eliminar artículo</string>
+    <string name="infoOwner">Información al Propietario</string>
+    <string name="textAddButton">Para añadir un nuevo producto al catálogo de productos pulse el botón "+" arriba a la izquierda.</string>
+    <string name="textDeleteButton">Para eliminar un artículo permanentemente pulse el botón en la pantalla de detalle de producto "Eliminar artículo".</string>
+
+</resources>

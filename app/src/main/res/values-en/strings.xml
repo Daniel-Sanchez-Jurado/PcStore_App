@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PcStore</string>
+    <string name="ctg1">Mice</string>
+    <string name="ctg2">Monitors</string>
+    <string name="ctg3">Headphones</string>
+    <string name="ctg4">Keyboards</string>
+    <string name="welcome">Welcome</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="login">Login</string>
+    <string name="username">User</string>
+    <string name="password">Password</string>
+    <string name="search">Search</string>
+    <string name="notFound">Text not found</string>
+    <string name="add">Add to Cart</string>
+    <string name="empty">Empty cart</string>
+    <string name="deletedArticles">Deleted articles</string>
+    <string name="total">Total</string>
+    <string name="finish">Finish order</string>
+    <string name="successful">Successful order</string>
+    <string name="articleAdded">Item added to cart</string>
+    <string name="goToCart">Go to cart</string>
+    <string name="listDeleted">The list has been deleted successfully</string>
+    <string name="callError">Something went wrong</string>
+    <string name="emptyUser">Empty user field</string>
+    <string name="emptyPassword">Empty password field</string>
+    <string name="wrongUser">Wrong user</string>
+    <string name="articleDeleted">Article deleted</string>
+    <string name="API">No API connection</string>
+
+    <string name="uploadNewArticle">Upload new article</string>
+    <string name="urlUpload">Image Url</string>
+    <string name="nameUpload">Name</string>
+    <string name="priceUpload">Price</string>
+    <string name="descriptionUpload">Description</string>
+    <string name="buttonUpload">Upload article</string>
+    <string name="createArticle">Create article</string>
+    <string name="selectCategorie">Select category</string>
+    <string name="toastErrorUpload">Wrong data</string>
+    <string name="successfullyUploaded">Article uploaded successfully</string>
+    <string name="successfullyDeleted">Article permanently deleted</string>
+    <string name="deleteArticle">Delete article</string>
+    <string name="infoOwner">Information to the Owner</string>
+    <string name="textAddButton">To add a new product to the product catalogue press the "+" button at the top left.</string>
+    <string name="textDeleteButton">To permanently delete an item press the "Delete item" button on the product detail screen.</string>
+
+
+</resources>
