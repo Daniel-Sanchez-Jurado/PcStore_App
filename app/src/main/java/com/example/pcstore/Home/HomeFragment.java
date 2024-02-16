@@ -205,7 +205,7 @@ public class HomeFragment<articles> extends Fragment {
         ctgNameSend = searchET.getText().toString();
 
         for (int i = 0; i < allArticles.size(); i++) {
-            if ((allArticles.get(i).name).toUpperCase().contains(ctgNameSearch) || (allArticles.get(i).categorie).toUpperCase().contains(ctgNameSearch)) {
+            if ((allArticles.get(i).name).toUpperCase().contains(ctgNameSearch) || (allArticles.get(i).category).toUpperCase().contains(ctgNameSearch)) {
                 searchList.add(allArticles.get(i));
             }
         }
@@ -225,7 +225,7 @@ public class HomeFragment<articles> extends Fragment {
         ctgNameSend = textCategories1.getText().toString();
 
         for (int i = 0; i < allArticles.size(); i++) {
-            if (allArticles.get(i).categorie.equals("Ratones")) {
+            if (allArticles.get(i).category.equals("Ratones")) {
                 articlesSend.add(allArticles.get(i));
             }
         }
@@ -236,7 +236,7 @@ public class HomeFragment<articles> extends Fragment {
         ctgNameSend = textCategories2.getText().toString();
 
         for (int i = 0; i < allArticles.size(); i++) {
-            if (allArticles.get(i).categorie.equals("Monitores")) {
+            if (allArticles.get(i).category.equals("Monitores")) {
                 articlesSend.add(allArticles.get(i));
             }
         }
@@ -247,7 +247,7 @@ public class HomeFragment<articles> extends Fragment {
         ctgNameSend = textCategories3.getText().toString();
 
         for (int i = 0; i < allArticles.size(); i++) {
-            if (allArticles.get(i).categorie.equals("Auriculares")) {
+            if (allArticles.get(i).category.equals("Auriculares")) {
                 articlesSend.add(allArticles.get(i));
             }
         }
@@ -258,7 +258,7 @@ public class HomeFragment<articles> extends Fragment {
         ctgNameSend = textCategories4.getText().toString();
 
         for (int i = 0; i < allArticles.size(); i++) {
-            if (allArticles.get(i).categorie.equals("Teclados")) {
+            if (allArticles.get(i).category.equals("Teclados")) {
                 articlesSend.add(allArticles.get(i));
             }
         }
@@ -365,13 +365,13 @@ public class HomeFragment<articles> extends Fragment {
     //Método para rellenar los arrays de categorías
     public void categoryFill() {
         for (int i = 0; i < allArticles.size(); i++) {
-            if (allArticles.get(i).categorie.equals("Ratones")) {
+            if (allArticles.get(i).category != null && allArticles.get(i).category.equals("Ratones")) {
                 catg1Articles.add(allArticles.get(i));
-            } else if (allArticles.get(i).categorie.equals("Monitores")) {
+            } else if (allArticles.get(i).category != null && allArticles.get(i).category.equals("Monitores")) {
                 catg2Articles.add(allArticles.get(i));
-            } else if (allArticles.get(i).categorie.equals("Auriculares")) {
+            } else if (allArticles.get(i).category != null && allArticles.get(i).category.equals("Auriculares")) {
                 catg3Articles.add(allArticles.get(i));
-            } else if (allArticles.get(i).categorie.equals("Teclados")) {
+            } else if (allArticles.get(i).category != null && allArticles.get(i).category.equals("Teclados")) {
                 catg4Articles.add(allArticles.get(i));
             }
         }

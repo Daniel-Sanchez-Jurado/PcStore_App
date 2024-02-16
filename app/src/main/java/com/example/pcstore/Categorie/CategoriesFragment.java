@@ -114,7 +114,7 @@ public class CategoriesFragment extends Fragment {
         String categoriesNameSearch = (searchET.getText().toString()).toUpperCase();
 
         for (int i = 0; i < allArticles.size(); i++) {
-            if ((allArticles.get(i).name).toUpperCase().contains(categoriesNameSearch) || (allArticles.get(i).categorie).toUpperCase().contains(categoriesNameSearch)) {
+            if ((allArticles.get(i).name).toUpperCase().contains(categoriesNameSearch) || (allArticles.get(i).category).toUpperCase().contains(categoriesNameSearch)) {
                 searchList.add(allArticles.get(i));
             }
         }

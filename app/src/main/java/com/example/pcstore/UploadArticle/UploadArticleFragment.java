@@ -41,7 +41,7 @@ public class UploadArticleFragment extends Fragment {
 
     //Variables--------------------
     ArrayList<Article> allArticles = new ArrayList();
-    String[] items = {"Ratones", "Teclados", "Monitores", "Auriculares"};
+    String[] items;
     String item;
     boolean ownerValidation = false;
     //-----------------------------
@@ -62,6 +62,12 @@ public class UploadArticleFragment extends Fragment {
         //----------------------------------------
 
         //Adaptador desplegable-------------------------
+        items = new String[]{
+                getResources().getString(R.string.mice),
+                getResources().getString(R.string.keyboards),
+                getResources().getString(R.string.monitors),
+                getResources().getString(R.string.headphones)
+        };
         adapterItems = new ArrayAdapter<>(requireContext(), R.layout.list_item, items);
         auto_complete_txt.setAdapter(adapterItems);
 
@@ -114,13 +120,13 @@ public class UploadArticleFragment extends Fragment {
 
         Article NewArticle = new Article();
 
-        if (image == ""){
+        if (image.equals("")){
             Toast.makeText(requireContext(),dataError,Toast.LENGTH_SHORT).show();
-        } else if (name == "") {
+        } else if (name.equals("")) {
             Toast.makeText(requireContext(),dataError,Toast.LENGTH_SHORT).show();
-        } else if (price == ""){
+        } else if (price.equals("")){
             Toast.makeText(requireContext(),dataError,Toast.LENGTH_SHORT).show();
-        } else if (description == ""){
+        } else if (description.equals("")){
             Toast.makeText(requireContext(),dataError,Toast.LENGTH_SHORT).show();
         } else if (!containsItem(items, item)) {
             Toast.makeText(requireContext(),dataError,Toast.LENGTH_SHORT).show();
@@ -129,7 +135,16 @@ public class UploadArticleFragment extends Fragment {
             NewArticle.name = name;
             NewArticle.price = Float.parseFloat(price);
             NewArticle.description = description;
-            NewArticle.categorie = item;
+
+            if (item.equals(getResources().getString(R.string.mice))){
+                NewArticle.category = "Ratones";
+            } else if (item.equals(getResources().getString(R.string.keyboards))) {
+                NewArticle.category = "Teclados";
+            } else if (item.equals(getResources().getString(R.string.monitors))){
+                NewArticle.category = "Monitores";
+            } else if (item.equals(getResources().getString(R.string.headphones))) {
+                NewArticle.category = "Auriculares";
+            }
 
             FragmentActivity activity = getActivity();
             MainActivity mainActivity = (MainActivity) activity;

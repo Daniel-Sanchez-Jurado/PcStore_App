@@ -7,7 +7,7 @@ public class Article {
     public String name ;
     public float price ;
     public String description ;
-    public String categorie ;
+    public String category ;
 
     public long getId() {
         return id;
@@ -49,11 +49,11 @@ public class Article {
         this.description = description;
     }
 
-    public String getCategorie() {
-        return categorie;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategorie(String categorie) {
-        this.categorie = categorie;
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
