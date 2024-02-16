@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PcStore</string>
-    <string name="ctg1">Mice</string>
-    <string name="ctg2">Monitors</string>
-    <string name="ctg3">Headphones</string>
-    <string name="ctg4">Keyboards</string>
+    <string name="mice">Mice</string>
+    <string name="monitors">Monitors</string>
+    <string name="headphones">Headphones</string>
+    <string name="keyboards">Keyboards</string>
     <string name="welcome">Welcome</string>
     <string name="home">Home</string>
     <string name="cart">Cart</string>

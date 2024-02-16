@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">PcStore</string>
-    <string name="ctg1">Ratones</string>
-    <string name="ctg2">Monitores</string>
-    <string name="ctg3">Auriculares</string>
-    <string name="ctg4">Teclados</string>
+    <string name="mice">Ratones</string>
+    <string name="monitors">Monitores</string>
+    <string name="headphones">Auriculares</string>
+    <string name="keyboards">Teclados</string>
     <string name="welcome">Bienvenido</string>
     <string name="home">Inicio</string>
     <string name="cart">Carrito</string>

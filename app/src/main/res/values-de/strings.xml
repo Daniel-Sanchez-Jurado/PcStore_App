@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PcStore</string>
-    <string name="ctg1">Mäuse</string>
-    <string name="ctg2">Computermonitore</string>
-    <string name="ctg3">Kopfhörer</string>
-    <string name="ctg4">Tastaturen</string>
+    <string name="mice">Mäuse</string>
+    <string name="monitors">Computermonitore</string>
+    <string name="headphones">Kopfhörer</string>
+    <string name="keyboards">Tastaturen</string>
     <string name="welcome">Willkommen</string>
     <string name="home">Start</string>
     <string name="cart">Einkaufskorb</string>
